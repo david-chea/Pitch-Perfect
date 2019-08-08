@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by David Chea on 06/08/2019.
-//  Copyright © 2019 Udacity. All rights reserved.
+//  Copyright © 2019 David Chea. All rights reserved.
 //
 
 import UIKit

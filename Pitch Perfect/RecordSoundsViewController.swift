@@ -3,7 +3,7 @@
 //  PitchPerfect
 //
 //  Created by David Chea on 05/08/2019.
-//  Copyright © 2019 Udacity. All rights reserved.
+//  Copyright © 2019 David Chea. All rights reserved.
 //
 
 import UIKit
@@ -21,10 +21,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewDidLoad()
         
         configureUI(isRecording: false)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
     
     @IBAction func recordAudio(_ sender: Any) {
@@ -70,14 +66,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func configureUI(isRecording: Bool) {
-        if isRecording {
-            recordButton.isEnabled = false
-            stopRecordingButton.isEnabled = true
-            recordingLabel.text = "Recording in Progress"
-        } else {
-            recordButton.isEnabled = true
-            stopRecordingButton.isEnabled = false
-            recordingLabel.text = "Tap to Record"
-        }
+        recordButton.isEnabled = !isRecording
+        stopRecordingButton.isEnabled = isRecording
+        recordingLabel.text = isRecording ? "Recording in Progress" : "Tap to Record"
     }
 }
