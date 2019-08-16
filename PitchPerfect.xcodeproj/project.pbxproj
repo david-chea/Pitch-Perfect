@@ -42,7 +42,7 @@
 		63490A8722F896C000E3A9EF = {
 			isa = PBXGroup;
 			children = (
-				63490A9222F896C000E3A9EF /* Pitch Perfect */,
+				63490A9222F896C000E3A9EF /* PitchPerfect */,
 				63490A9122F896C000E3A9EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63490A9222F896C000E3A9EF /* Pitch Perfect */ = {
+		63490A9222F896C000E3A9EF /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
 				63490A9322F896C000E3A9EF /* AppDelegate.swift */,
@@ -67,7 +67,7 @@
 				63C9EAA122F9E68D00F700E2 /* PlaySoundsViewController.swift */,
 				63FEFF0F22FAE54F003F372C /* playsoundsviewcontroller-audio.swift */,
 			);
-			path = "Pitch Perfect";
+			path = PitchPerfect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63490A8B22F896C000E3A9EF /* Build configuration list for PBXProject "Pitch Perfect" */;
+			buildConfigurationList = 63490A8B22F896C000E3A9EF /* Build configuration list for PBXProject "PitchPerfect" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,12 +292,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P9G69HDM7;
-				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.davidchea.Pitch-Perfect";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidchea.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,12 +310,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P9G69HDM7;
-				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PitchPerfect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.davidchea.Pitch-Perfect";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidchea.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63490A8B22F896C000E3A9EF /* Build configuration list for PBXProject "Pitch Perfect" */ = {
+		63490A8B22F896C000E3A9EF /* Build configuration list for PBXProject "PitchPerfect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63490AA022F896C100E3A9EF /* Debug */,

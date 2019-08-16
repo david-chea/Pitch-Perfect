@@ -17,7 +17,7 @@
                BlueprintIdentifier = "63490A8F22F896C000E3A9EF"
                BuildableName = "Pitch Perfect.app"
                BlueprintName = "Pitch Perfect"
-               ReferencedContainer = "container:Pitch Perfect.xcodeproj">
+               ReferencedContainer = "container:PitchPerfect.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "63490A8F22F896C000E3A9EF"
             BuildableName = "Pitch Perfect.app"
             BlueprintName = "Pitch Perfect"
-            ReferencedContainer = "container:Pitch Perfect.xcodeproj">
+            ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "63490A8F22F896C000E3A9EF"
             BuildableName = "Pitch Perfect.app"
             BlueprintName = "Pitch Perfect"
-            ReferencedContainer = "container:Pitch Perfect.xcodeproj">
+            ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "63490A8F22F896C000E3A9EF"
             BuildableName = "Pitch Perfect.app"
             BlueprintName = "Pitch Perfect"
-            ReferencedContainer = "container:Pitch Perfect.xcodeproj">
+            ReferencedContainer = "container:PitchPerfect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
