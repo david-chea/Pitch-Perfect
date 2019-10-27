@@ -10,22 +10,40 @@ import SwiftUI
 
 struct RecordSoundView: View {
     
+    // MARK: - Property
+    
+    @State private var isRecording = false
+    @State private var selection: Int!
+    
     // MARK: - View
     
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 50) {
-                Image("icon_record")
-                    .resizable()
-                    .frame(width: 125, height: 125)
-                Text("TAP TO RECORD")
-                
-                NavigationLink(destination: PlaySoundView()) {
-                    Image("icon_stop")
+                Button(action: { self.isRecording.toggle() }) {
+                    Image("icon_record")
                         .renderingMode(.original)
                         .resizable()
-                        .frame(width: 75, height: 75)
+                        .frame(width: 125, height: 125)
                 }
+                .disabled(isRecording)
+                .opacity(isRecording ? 0.5 : 1)
+                
+                Text(isRecording ? "RECORDING IN PROGRESS" : "TAP TO RECORD")
+                
+                NavigationLink(destination: PlaySoundView(), tag: 1, selection: $selection) {
+                    Button(action: {
+                        self.isRecording.toggle()
+                        self.selection = 1
+                    }) {
+                        Image("icon_stop")
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                    }
+                }
+                .disabled(!isRecording)
+                .opacity(isRecording ? 1 : 0.5)
             }
             .navigationBarTitle("Record Sound")
         }
