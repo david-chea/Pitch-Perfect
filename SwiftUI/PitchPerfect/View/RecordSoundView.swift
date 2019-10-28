@@ -10,9 +10,12 @@ import SwiftUI
 
 struct RecordSoundView: View {
     
-    // MARK: - Property
+    // MARK: - Properties
     
+    /// Check is the user is recording the sound.
     @State private var isRecording = false
+    
+    /// If it is equal to 1, trigger the navigation link.
     @State private var selection: Int!
     
     // MARK: - View
@@ -21,7 +24,7 @@ struct RecordSoundView: View {
         NavigationView {
             VStack(alignment: .center, spacing: 50) {
                 Button(action: { self.isRecording.toggle() }) {
-                    Image("icon_record")
+                    Image("icon-record")
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: 125, height: 125)
@@ -36,7 +39,7 @@ struct RecordSoundView: View {
                         self.isRecording.toggle()
                         self.selection = 1
                     }) {
-                        Image("icon_stop")
+                        Image("icon-stop")
                             .renderingMode(.original)
                             .resizable()
                             .frame(width: 75, height: 75)

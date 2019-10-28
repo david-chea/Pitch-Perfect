@@ -10,6 +10,11 @@ import SwiftUI
 
 struct PlaySoundView: View {
     
+    // MARK: - Property
+    
+    /// Check is the app is playing the sound.
+    @State private var isPlaying = false
+    
     // MARK: - View
     
     var body: some View {
@@ -19,25 +24,17 @@ struct PlaySoundView: View {
             HStack {
                 Spacer()
                 
-                Image("icon_slow")
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-slow")
+                        .renderingMode(.original)
+                }
                 
                 Spacer()
                 
-                Image("icon_fast")
-                
-                Spacer()
-            }
-            
-            Spacer()
-            
-            HStack {
-                Spacer()
-                
-                Image("icon_highpitch")
-                
-                Spacer()
-                
-                Image("icon_lowpitch")
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-fast")
+                        .renderingMode(.original)
+                }
                 
                 Spacer()
             }
@@ -47,20 +44,51 @@ struct PlaySoundView: View {
             HStack {
                 Spacer()
                 
-                Image("icon_echo")
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-highpitch")
+                        .renderingMode(.original)
+                }
                 
                 Spacer()
                 
-                Image("icon_reverb")
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-lowpitch")
+                        .renderingMode(.original)
+                }
                 
                 Spacer()
             }
             
             Spacer()
             
-            Image("icon_stop")
-                .resizable()
-                .frame(width: 75, height: 75)
+            HStack {
+                Spacer()
+                
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-echo")
+                        .renderingMode(.original)
+                }
+                
+                Spacer()
+                
+                Button(action: { self.isPlaying.toggle() }) {
+                    Image("icon-reverb")
+                        .renderingMode(.original)
+                }
+                
+                Spacer()
+            }
+            
+            Spacer()
+            
+            Button(action: { self.isPlaying.toggle() }) {
+                Image("icon-stop")
+                    .renderingMode(.original)
+                    .resizable()
+                    .frame(width: 75, height: 75)
+            }
+            .disabled(!isPlaying)
+            .opacity(isPlaying ? 1 : 0.5)
             
             Spacer()
         }
