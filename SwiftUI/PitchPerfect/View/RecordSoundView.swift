@@ -53,7 +53,7 @@ struct RecordSoundView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecordSoundView_Previews: PreviewProvider {
     
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone 11 Pro Max"], id: \.self) { deviceName in
