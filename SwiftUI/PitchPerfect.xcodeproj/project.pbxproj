@@ -58,7 +58,6 @@
 		635397242365BE61003C9323 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				635397392365BF82003C9323 /* Model */,
 				6353973A2365BF88003C9323 /* View */,
 				6353973B2365BF8D003C9323 /* Support */,
 				6353972D2365BE63003C9323 /* Preview Content */,
@@ -72,13 +71,6 @@
 				6353972E2365BE63003C9323 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		635397392365BF82003C9323 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6353973A2365BF88003C9323 /* View */ = {
