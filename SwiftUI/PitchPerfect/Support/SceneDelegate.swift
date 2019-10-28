@@ -6,7 +6,6 @@
 //  Copyright © 2019 David Chea. All rights reserved.
 //
 
-import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
