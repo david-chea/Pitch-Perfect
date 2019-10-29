@@ -12,10 +12,7 @@ struct RecordSoundView: View {
     
     // MARK: - Properties
     
-    /// Check is the user is recording the sound.
     @State private var isRecording = false
-    
-    /// If it is equal to 1, trigger the navigation link.
     @State private var selection: Int!
     
     // MARK: - View

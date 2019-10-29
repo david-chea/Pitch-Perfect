@@ -12,7 +12,6 @@ struct PlaySoundView: View {
     
     // MARK: - Property
     
-    /// Check is the app is playing the sound.
     @State private var isPlaying = false
     
     // MARK: - View
