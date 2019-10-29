@@ -13,6 +13,7 @@ struct RecordSoundView: View {
     // MARK: - Properties
     
     @State private var isRecording = false
+    
     @State private var selection: Int!
     
     // MARK: - View
