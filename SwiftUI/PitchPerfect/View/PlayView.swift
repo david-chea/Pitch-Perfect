@@ -1,5 +1,5 @@
 //
-//  PlaySoundView.swift
+//  PlayView.swift
 //  PitchPerfect
 //
 //  Created by David Chea on 27/10/2019.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PlaySoundView: View {
+struct PlayView: View {
     
     // MARK: - Property
     
@@ -95,11 +95,11 @@ struct PlaySoundView: View {
     }
 }
 
-struct PlaySoundView_Previews: PreviewProvider {
+struct PlayView_Previews: PreviewProvider {
     
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone 11 Pro Max"], id: \.self) { deviceName in
-            PlaySoundView()
+            PlayView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

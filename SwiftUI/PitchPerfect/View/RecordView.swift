@@ -1,5 +1,5 @@
 //
-//  RecordSoundView.swift
+//  RecordView.swift
 //  PitchPerfect
 //
 //  Created by David Chea on 27/10/2019.
@@ -8,12 +8,11 @@
 
 import SwiftUI
 
-struct RecordSoundView: View {
+struct RecordView: View {
     
     // MARK: - Properties
     
     @State private var isRecording = false
-    
     @State private var selection: Int!
     
     // MARK: - View
@@ -32,7 +31,7 @@ struct RecordSoundView: View {
                 
                 Text(isRecording ? "RECORDING IN PROGRESS" : "TAP TO RECORD")
                 
-                NavigationLink(destination: PlaySoundView(), tag: 1, selection: $selection) {
+                NavigationLink(destination: PlayView(), tag: 1, selection: $selection) {
                     Button(action: {
                         self.isRecording.toggle()
                         self.selection = 1
@@ -51,11 +50,11 @@ struct RecordSoundView: View {
     }
 }
 
-struct RecordSoundView_Previews: PreviewProvider {
+struct RecordView_Previews: PreviewProvider {
     
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone 11 Pro Max"], id: \.self) { deviceName in
-            RecordSoundView()
+            RecordView()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }
