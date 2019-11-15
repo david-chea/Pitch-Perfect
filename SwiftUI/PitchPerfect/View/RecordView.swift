@@ -31,10 +31,10 @@ struct RecordView: View {
                 
                 Text(isRecording ? "RECORDING IN PROGRESS" : "TAP TO RECORD")
                 
-                NavigationLink(destination: PlayView(), tag: 1, selection: $selection) {
+                NavigationLink(destination: PlayView(), tag: 0, selection: $selection) {
                     Button(action: {
                         self.isRecording.toggle()
-                        self.selection = 1
+                        self.selection = 0
                     }) {
                         Image("icon-stop")
                             .renderingMode(.original)
